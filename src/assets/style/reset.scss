@@ -1,0 +1,78 @@
+/* 选择历史记录的文字颜色和背景颜色 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input:-webkit-autofill {
+  -webkit-animation: autofill-fix 1s infinite !important;
+  /* 选择历史记录的文字颜色*/
+  -webkit-text-fill-color: #666;
+  -webkit-transition: background-color 50000s ease-in-out 0s !important;
+  transition: background-color 50000s ease-in-out 0s !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* 选择历史记录的背景颜色 */
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+}
+
+[role="button"],
+a,
+area,
+button,
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+a {
+  text-decoration: none;
+}
+
+input[type="number"],
+input[type="password"],
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
+/* 选择历史记录的文字颜色和背景颜色 */
+
+// 其他
+
+/* 谷歌去掉type为number是的加减控件 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* 火狐去掉type为number是的加减控件 */
+input {
+  -moz-appearance: textfield;
+}
