@@ -10,7 +10,8 @@
     "axios": "^0.24.0",
     "vue": "^3.2.25",
     "vue-router": "4",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "vue-video-player": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.5",

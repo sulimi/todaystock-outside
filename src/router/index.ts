@@ -7,7 +7,8 @@ import Grad from "@/views/Grad.vue";
 import Bag from "@/views/Bag.vue";
 import Error from "@/views/Error.vue";
 
-const areaUrl = localStorage.getItem("t_s_area");
+// const areaUrl = localStorage.getItem("t_s_area");
+const areaUrl = 'hk';
 
 const homeUrl = areaUrl ? `${areaUrl}/home` : '/';
 

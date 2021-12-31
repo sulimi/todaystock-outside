@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed } from "vue";
 
 defineProps<{ msg: string }>();
 
-const homeUrl = "";
+const homeUrl = "hk";
 
 const headLinkInfo = computed(() => [
   {
@@ -33,7 +33,7 @@ const headLinkInfo = computed(() => [
   <div class="stock-head">
     <div class="title">TodayStock</div>
     <div class="links">
-      <a v-for="i in headLinkInfo" :href="i.link" :target="i.target" :key="i.text">{{i.text}}</a>
+      <router-link v-for="i in headLinkInfo" :to="i.link" :target="i.target" :key="i.text">{{i.text}}</router-link>
     </div>
     <div class="center" />
     <div class="category">
